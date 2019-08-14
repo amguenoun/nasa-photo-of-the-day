@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nasaParent{
+  width:500px;
+  height:500px;
+  margin: 0 auto;
+}
+
+.nasa-img{
+  max-width:100%;
+}

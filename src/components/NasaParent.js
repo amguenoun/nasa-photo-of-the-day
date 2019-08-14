@@ -14,7 +14,7 @@ const NasaParent = () => {
             })
     }, []);
     return (
-        <div>
+        <div className="nasaParent">
             <NasaChild title={nasaData.title} date={nasaData.date}
                 explanation={nasaData.explanation} link={nasaData.url} />
         </div>
