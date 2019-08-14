@@ -54,3 +54,16 @@
   width:45%;
   text-align:left;
 }
+
+.astList{
+  background:#f0ead6;
+  width:800px;
+  margin: 0 auto;
+}
+.astList li{
+  margin: 1% 0%;
+  text-align:left;
+}
+.astList ul{
+  padding-bottom: 3%;
+}
