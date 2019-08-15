@@ -5,10 +5,11 @@ import NasaChild from "./NasaChild"
 const NasaCard = (props) => {
 
     return (
-        <Card>
-            <NasaChild title={props.title} date={props.date}
-                explanation={props.explanation} link={props.link} />
-        </Card>
+        !props.title ? <></> :
+            <Card>
+                <NasaChild title={props.title} date={props.date}
+                    explanation={props.explanation} link={props.link} />
+            </Card>
     )
 
 

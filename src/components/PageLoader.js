@@ -8,8 +8,8 @@ export default class App extends React.Component {
             <Loader
                 type="Rings"
                 color="#000"
-                height="50"
-                width="50"
+                height={500}
+                width={500}
             />
         );
     }
