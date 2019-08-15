@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios"
-// import NasaChild from "./NasaChild";
 import AsteroidParent from "./AsteroidParent"
 import NasaCard from "./NasaCard";
 const NasaParent = () => {
@@ -17,8 +16,6 @@ const NasaParent = () => {
     return (
         <div className="nasaParent">
             <h1>Nasa Astronomy Picture of the Day</h1>
-            {/* <NasaChild title={nasaData.title} date={nasaData.date}
-                explanation={nasaData.explanation} link={nasaData.url} /> */}
             <NasaCard title={nasaData.title} date={nasaData.date}
                 explanation={nasaData.explanation} link={nasaData.url} />
             <AsteroidParent date={nasaData.date} />

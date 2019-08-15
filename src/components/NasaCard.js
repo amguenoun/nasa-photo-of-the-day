@@ -1,25 +1,17 @@
 import React from 'react';
-import { Card, Image } from 'semantic-ui-react';
-import styled from "styled-components";
+import { Card } from 'semantic-ui-react';
+import NasaChild from "./NasaChild"
 
-const CustomImage = styled.img`
-    width:750px;
-    max-width:100%;
-    object-fit:contain;
-`;
-const NasaCard = (props) => (
-    <Card>
-        <CustomImage src={props.link} />
-        <Card.Content>
-            <Card.Header>{props.title}</Card.Header>
-            <Card.Meta>
-                <span className='date'>{props.date}</span>
-            </Card.Meta>
-            <Card.Description>
-                {props.explanation}
-            </Card.Description>
-        </Card.Content>
-    </Card>
-)
+const NasaCard = (props) => {
+
+    return (
+        <Card>
+            <NasaChild title={props.title} date={props.date}
+                explanation={props.explanation} link={props.link} />
+        </Card>
+    )
+
+
+}
 
 export default NasaCard;
