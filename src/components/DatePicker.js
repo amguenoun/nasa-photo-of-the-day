@@ -22,7 +22,7 @@ export default function DatePickers() {
             <form className={classes.container} noValidate>
                 <TextField
                     id="date"
-                    label="Birthday"
+                    label="Date"
                     type="date"
                     defaultValue="2019-08-15"
                     className={classes.textField}
