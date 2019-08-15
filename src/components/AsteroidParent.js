@@ -16,7 +16,7 @@ const AsteroidParent = (props) => {
 
     return (
         <div>
-            {(!props.date) ? (<Loader />) :
+            {(!props.date) ? (<><h3>Loading...</h3> <Loader /></>) :
                 (<div className="astList">
                     <h1>List of Near Miss Asteroids {date}</h1>
                     <ul>
