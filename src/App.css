@@ -77,3 +77,9 @@
 .astList ul{
   padding-bottom: 3%;
 }
+
+.foot{
+  text-align:center;
+  background:#f0ead6;
+  padding:1% 0%;
+}
