@@ -31,3 +31,45 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nasaParent{
+  margin: 0 auto;
+  width:800px;
+  background:#f0ead6;
+}
+
+.ui.card{
+  width:90%;
+  margin: 0 auto;
+  padding:2% 0%;
+}
+
+.nasa-img{
+  max-width:100%;
+  object-fit:contain;
+  width:45%;
+}
+
+.flex{
+  display:flex;
+  justify-content:space-around;
+}
+
+.desc{
+  width:45%;
+  text-align:left;
+}
+
+.astList{
+  background:#f0ead6;
+  width:800px;
+  margin: 0 auto;
+}
+.astList li{
+  margin: 1% 0%;
+  text-align:left;
+}
+.astList ul{
+  padding-bottom: 3%;
+}
