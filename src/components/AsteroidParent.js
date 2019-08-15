@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import AsteroidChild from "./AsteroidChild";
+import Loader from "./PageLoader";
 
 const AsteroidParent = (props) => {
     const [list, setList] = useState([]);
@@ -15,7 +16,7 @@ const AsteroidParent = (props) => {
 
     return (
         <div>
-            {(!props.date) ? (<h3>Loading...</h3>) :
+            {(!props.date) ? (<Loader />) :
                 (<div className="astList">
                     <h1>List of Near Miss Asteroids {date}</h1>
                     <ul>

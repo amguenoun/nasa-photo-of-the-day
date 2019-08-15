@@ -3,10 +3,8 @@ import axios from "axios"
 import AsteroidParent from "./AsteroidParent"
 import NasaCard from "./NasaCard";
 import DatePicker from "./DatePicker";
-
 const NasaParent = () => {
     const [nasaData, setNasaData] = useState({});
-    const [date, setDate] = useState(nasaData.date);
     useEffect(() => {
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY `)
             .then(response => {
@@ -21,9 +19,9 @@ const NasaParent = () => {
         <div className="nasaParent">
             <h1>Nasa Astronomy Picture of the Day</h1>
             <DatePicker />
-            <NasaCard title={nasaData.title} date={date}
+            <NasaCard title={nasaData.title} date={nasaData.date}
                 explanation={nasaData.explanation} link={nasaData.url} />
-            <AsteroidParent date={date} />
+            <AsteroidParent date={nasaData.date} />
         </div>
     )
 }
